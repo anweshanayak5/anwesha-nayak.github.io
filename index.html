@@ -1,1 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anwesha Nayak | Business Analytics & Strategy</title>
+
+    <meta name="description"
+        content="Anwesha Nayak — PGDM candidate with experience in business analytics, commercial strategy, client management and entrepreneurship.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #171717;
+            background: #fafafa;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(250, 250, 250, 0.95);
+            border-bottom: 1px solid #e5e5e5;
+            padding: 18px 8%;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 88px);
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 3vw, 34px);
+            font-weight: normal;
+            max-width: 800px;
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            border: 1px solid #171717;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .button.primary {
+            background: #171717;
+            color: white;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-label {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #777;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: #f2f2f2;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+        }
+
+        .about-text {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        /* EXPERIENCE */
+
+        .experience-item {
+            border-top: 1px solid #d8d8d8;
+            padding: 30px 0;
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 40px;
+        }
+
+        .experience-date {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .experience-item h3 {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .experience-role {
+            color: #666;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+            color: #444;
+        }
+
+        .experience-item li {
+            margin-bottom: 10px;
+        }
+
+        /* PROJECT */
+
+        .project {
+            background: #171717;
+            color: white;
+        }
+
+        .project-card {
+            max-width: 1000px;
+        }
+
+        .project h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            color: #cccccc;
+            max-width: 800px;
+            margin-bottom: 25px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .tag {
+            border: 1px solid #555;
+            padding: 7px 12px;
+            font-size: 12px;
+        }
+
+        .project-image {
+            width: 100%;
+            display: block;
+            margin: 25px 0;
+            border: 1px solid #444;
+        }
+
+        .project-insight {
+            padding: 25px 0;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            margin: 30px 0;
+        }
+
+        .project-insight strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .project .button {
+            border-color: white;
+        }
+
+        .project .button.primary {
+            background: white;
+            color: #171717;
+        }
+
+        /* LEADERSHIP */
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .leadership-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 28px;
+        }
+
+        .leadership-card h3 {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .leadership-card .organization {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .leadership-card p {
+            color: #555;
+        }
+
+        /* ACHIEVEMENTS */
+
+        .achievement-list {
+            border-top: 1px solid #ddd;
+        }
+
+        .achievement {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 22px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .achievement strong {
+            font-size: 17px;
+        }
+
+        .achievement span {
+            color: #777;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            background: #f2f2f2;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+
+        /* EDUCATION */
+
+        .education-item {
+            display: grid;
+            grid-template-columns: 180px 1fr 100px;
+            gap: 30px;
+            padding: 25px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .education-item h3 {
+            font-size: 18px;
+        }
+
+        .education-item p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .education-score {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* HOBBIES */
+
+        .hobbies {
+            background: white;
+        }
+
+        .hobby-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hobby {
+            font-size: 18px;
+            padding: 15px 22px;
+            border: 1px solid #ddd;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: #171717;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #bbb;
+            margin-bottom: 30px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact .button {
+            border-color: white;
+        }
+
+        .contact .button.primary {
+            background: white;
+            color: #171717;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 75vh;
+                padding: 60px 7%;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            section {
+                padding: 65px 7%;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .experience-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .achievement {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .achievement span {
+                text-align: left;
+            }
+
+            .education-item {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .education-score {
+                text-align: left;
+            }
+
+            .contact h2 {
+                font-size: 36px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                AN.
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="location">
+                Baleshwar, Odisha · India
+            </div>
+
+            <h1>Anwesha<br>Nayak.</h1>
+
+            <h2>
+                Business Analytics · Commercial Strategy · Consulting
+            </h2>
+
+            <p class="hero-description">
+                PGDM candidate with experience spanning business analytics,
+                commercial strategy, client management, process improvement
+                and entrepreneurship. I enjoy translating business problems
+                into structured, data-backed decisions.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button primary"
+                    href="#projects">
+                    View My Work
+                </a>
+
+                <a class="button"
+                    href="https://www.linkedin.com/in/anwesha-nayak5/"
+                    target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                About
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+                    <h2 class="section-title">
+                        Turning business questions into action.
+                    </h2>
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+                        I am currently pursuing my PGDM at Great Lakes
+                        Institute of Management, with a focus on building
+                        capabilities across analytics, strategy and
+                        business problem-solving.
+                    </p>
+
+                    <p>
+                        My experience has given me exposure to client
+                        acquisition, commercial pricing, go-to-market
+                        planning, workforce planning, recruitment,
+                        stakeholder management and process improvement.
+                    </p>
+
+                    <p>
+                        I also enjoy working with data to identify
+                        performance gaps and translate analysis into
+                        practical business insights.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Experience
+            </div>
+
+            <h2 class="section-title">
+                Professional Experience
+            </h2>
+
+
+            <!-- PADDAVI -->
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jul 2023 — Aug 2026
+                </div>
+
+                <div>
+
+                    <h3>
+                        Paddavi Consultancy Services
+                    </h3>
+
+                    <div class="experience-role">
+                        Founder & Client Lead
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Led multi-region client acquisition and
+                            stakeholder pitching while managing contract
+                            pricing and key accounts, establishing an
+                            <strong>80% repeat-client retention rate.</strong>
+                        </li>
+
+                        <li>
+                            Developed the recruitment funnel for corporate
+                            clients, covering candidate sourcing,
+                            structured initial interviews and
+                            psychometric assessments.
+                        </li>
+
+                        <li>
+                            Advised clients across four industry sectors
+                            on workforce planning and analysed turnover
+                            drivers, contributing to a
+                            <strong>35% reduction in early-stage
+                            attrition.</strong>
+                        </li>
+
+                        <li>
+                            Standardised service workflows using recruitment
+                            funnel analytics to reduce delivery turnaround
+                            time and improve operational efficiency.
+                        </li>
+
+                        <li>
+                            Planned commercial pricing, go-to-market
+                            approach and client acquisition strategy while
+                            building the service delivery model.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- TTO -->
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jul 2022 — Jun 2023
+                </div>
+
+                <div>
+
+                    <h3>
+                        VIT-AP Technology Transfer Office
+                    </h3>
+
+                    <div class="experience-role">
+                        Intern
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Collaborated with academic researchers to
+                            develop go-to-market strategies and commercial
+                            models for emerging university innovations.
+                        </li>
+
+                        <li>
+                            Assessed commercial viability across
+                            <strong>12+ research projects</strong>,
+                            structuring unit-level financial models and
+                            target price points to establish licensing
+                            value propositions.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUDDINGO -->
+
+            <div class="experience-item">
+
+                <div class="experience-date">
+                    Jul 2022 — Aug 2022
+                </div>
+
+                <div>
+
+                    <h3>
+                        Buddingo
+                    </h3>
+
+                    <div class="experience-role">
+                        Business Development Intern
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Led a four-member outreach team, standardising
+                            pitch messaging and tracking funnel conversion
+                            metrics to improve lead acquisition efficiency.
+                        </li>
+
+                        <li>
+                            Executed targeted social media outreach campaigns
+                            that contributed to a
+                            <strong>25% increase in qualified mentor
+                            onboarding.</strong>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+
+    <section class="project" id="projects">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Featured Project
+            </div>
+
+            <div class="project-card">
+
+                <h3>
+                    Sales & Profitability Analytics
+                </h3>
+
+                <p class="project-description">
+
+                    An e-commerce sales and profitability analysis built
+                    to understand where revenue is being generated and
+                    where revenue is not translating into sufficient
+                    profitability.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">Data Modelling</span>
+                    <span class="tag">Profitability Benchmarking</span>
+
+                </div>
+
+
+                <img
+                    class="project-image"
+                    src="screenshots/executive_overview.png"
+                    alt="Power BI Executive Overview Dashboard">
+
+
+                <div class="project-insight">
+
+                    <strong>
+                        What the analysis identified
+                    </strong>
+
+                    Electronic Games generated ₹39.17K in sales but
+                    recorded a -1.64% profit margin, highlighting a
+                    high-revenue, below-benchmark segment requiring
+                    further investigation.
+
+                </div>
+
+
+                <a
+                    class="button primary"
+                    href="https://github.com/anweshanayak5/PowerBI-Sales-Performance-Analysis"
+                    target="_blank">
+
+                    View Full Project →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEADERSHIP -->
+
+    <section id="leadership">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Leadership
+            </div>
+
+            <h2 class="section-title">
+                Leadership & Responsibility
+            </h2>
+
+            <div class="leadership-grid">
+
+
+                <div class="leadership-card">
+
+                    <h3>
+                        Vice Curator
+                    </h3>
+
+                    <div class="organization">
+                        Global Shapers Amaravati Hub · World Economic Forum
+                    </div>
+
+                    <p>
+                        Structured hub recruitment and contributed to the
+                        2026–2027 strategic charter.
+                    </p>
+
+                </div>
+
+
+                <div class="leadership-card">
+
+                    <h3>
+                        President
+                    </h3>
+
+                    <div class="organization">
+                        Women Innovation Network · VIT-AP University
+                    </div>
+
+                    <p>
+                        Led a 30-member team focused on empowering rural
+                        women to monetise their skills.
+                    </p>
+
+                </div>
+
+
+                <div class="leadership-card">
+
+                    <h3>
+                        Member
+                    </h3>
+
+                    <div class="organization">
+                        Alumni Committee · Great Lakes Institute of Management
+                    </div>
+
+                    <p>
+                        Drove student-alumni engagement initiatives to
+                        foster mentorship and interaction.
+                    </p>
+
+                </div>
+
+
+                <div class="leadership-card">
+
+                    <h3>
+                        Core Member
+                    </h3>
+
+                    <div class="organization">
+                        V-Launch · VIT-AP University
+                    </div>
+
+                    <p>
+                        Managed flagship event operations, guest relations
+                        and participant support.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section id="achievements">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Recognition
+            </div>
+
+            <h2 class="section-title">
+                Achievements
+            </h2>
+
+            <div class="achievement-list">
+
+
+                <div class="achievement">
+
+                    <strong>
+                        Finalist — ARAMBH National Entrepreneurship &
+                        Pitching Challenge
+                    </strong>
+
+                    <span>
+                        National Level
+                    </span>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <strong>
+                        Winner — Women in Entrepreneurship Poster Design
+                    </strong>
+
+                    <span>
+                        VIT-AP University · 2025
+                    </span>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <strong>
+                        Winner — International MUN-ILO
+                    </strong>
+
+                    <span>
+                        SOA University · 2022
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="skills">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Capabilities
+            </div>
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+            <div class="skills-grid">
+
+                <span class="skill">Commercial Excellence</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Data Analysis</span>
+                <span class="skill">Stakeholder Management</span>
+                <span class="skill">Client Negotiation</span>
+                <span class="skill">Process Improvement</span>
+                <span class="skill">Go-to-Market Strategy</span>
+                <span class="skill">Business Development</span>
+                <span class="skill">Financial Modelling</span>
+                <span class="skill">DAX</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section>
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Education
+            </div>
+
+            <h2 class="section-title">
+                Academic Background
+            </h2>
+
+
+            <div class="education-item">
+
+                <div>
+                    <strong>2026 — 2028</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        PGDM
+                    </h3>
+
+                    <p>
+                        Great Lakes Institute of Management, Gurgaon
+                    </p>
+                </div>
+
+                <div class="education-score">
+                    Pursuing
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <div>
+                    <strong>2026</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        BBA
+                    </h3>
+
+                    <p>
+                        Vellore Institute of Management, Amaravati
+                    </p>
+                </div>
+
+                <div class="education-score">
+                    8.67 / 10
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <div>
+                    <strong>2022</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Class XII
+                    </h3>
+
+                    <p>
+                        Bridgewell Global School, Bhubaneswar
+                    </p>
+                </div>
+
+                <div class="education-score">
+                    75.6%
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <div>
+                    <strong>2020</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Class X
+                    </h3>
+
+                    <p>
+                        Modern Public School, Baleshwar
+                    </p>
+                </div>
+
+                <div class="education-score">
+                    92.8%
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+
+    <section class="about">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Certifications
+            </div>
+
+            <h2 class="section-title">
+                Learning
+            </h2>
+
+            <div class="leadership-grid">
+
+                <div class="leadership-card">
+
+                    <h3>
+                        Google Data Analytics Professional Certificate
+                    </h3>
+
+                    <div class="organization">
+                        Google · 2025
+                    </div>
+
+                    <p>
+                        Six-week professional certificate focused on
+                        data analytics and structured problem-solving.
+                    </p>
+
+                </div>
+
+
+                <div class="leadership-card">
+
+                    <h3>
+                        McKinsey Forward Program
+                    </h3>
+
+                    <div class="organization">
+                        McKinsey · 2025
+                    </div>
+
+                    <p>
+                        Three-week programme focused on professional
+                        development and future-ready capabilities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOBBIES -->
+
+    <section class="hobbies">
+
+        <div class="section-container">
+
+            <div class="section-label">
+                Beyond Work
+            </div>
+
+            <h2 class="section-title">
+                Things I Enjoy
+            </h2>
+
+            <div class="hobby-list">
+
+                <span class="hobby">🎤 Singing</span>
+                <span class="hobby">🎨 Drawing</span>
+                <span class="hobby">💃 Dance</span>
+                <span class="hobby">✍️ Poetry</span>
+                <span class="hobby">📱 Content Creation</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-container">
+
+            <h2>
+                Let's connect.
+            </h2>
+
+            <p>
+                Interested in business, analytics, strategy or
+                meaningful conversations? I'd love to connect.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    class="button primary"
+                    href="https://www.linkedin.com/in/anwesha-nayak5/"
+                    target="_blank">
+
+                    LinkedIn
+
+                </a>
+
+                <a
+                    class="button"
+                    href="https://github.com/anweshanayak5"
+                    target="_blank">
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Anwesha Nayak · Baleshwar, Odisha
+
+    </footer>
+
+
+</body>
+
+</html>
